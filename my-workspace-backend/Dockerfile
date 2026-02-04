@@ -1,13 +1,11 @@
-# Step 1: Build the application using Maven
-FROM maven:3.8.4-openjdk-17 AS build
+# Step 1: Build the application using Maven and Java 21
+FROM maven:3.9.6-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-# Step 2: Run the application
-# We changed from openjdk:17-jdk-slim to eclipse-temurin:17-jre-alpine
-# This is a much more stable and smaller image for Spring Boot
-FROM eclipse-temurin:17-jre-alpine
+# Step 2: Run the application using Java 21 JRE
+FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
