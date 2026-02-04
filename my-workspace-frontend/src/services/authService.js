@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080/api/auth";
+const BASE_URL = "https://my-workspace-backend-kisc.onrender.com/api/auth";
 
 export const loginUser = async (credentials) => {
     const res = await fetch(`${BASE_URL}/login`, {
@@ -9,9 +9,7 @@ export const loginUser = async (credentials) => {
 
     const data = await res.json();
 
-    // If login failed (401 Unauthorized, etc.)
     if (!res.ok) {
-        // This throws the message from your Spring Boot: Map.of("message", "...")
         throw new Error(data.message || "Invalid credentials");
     }
 
@@ -28,7 +26,6 @@ export const registerUser = async (user) => {
 
     const data = await res.json();
 
-    // If registration failed (400 Bad Request / Email exists)
     if (!res.ok) {
         throw new Error(data.message || "Registration failed");
     }

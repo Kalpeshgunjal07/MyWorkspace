@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080/api/projects";
+const BASE_URL = "https://my-workspace-backend-kisc.onrender.com/api/projects";
 
 export const getProjects = async (userId) => {
     const res = await fetch(`${BASE_URL}/user/${userId}`);
