@@ -25,9 +25,14 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .cors(cors -> cors.configurationSource(req -> {
                     CorsConfiguration config = new CorsConfiguration();
-                    config.setAllowedOrigins(List.of("http://localhost:5173"));
-                    config.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS"));
+                    // Added your specific Vercel URL to the allowed origins
+                    config.setAllowedOrigins(List.of(
+                            "http://localhost:5173",
+                            "https://my-workspace-sigma.vercel.app"
+                    ));
+                    config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     config.setAllowedHeaders(List.of("*"));
+                    config.setAllowCredentials(true);
                     return config;
                 }))
                 .authorizeHttpRequests(auth -> auth
