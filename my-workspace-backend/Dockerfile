@@ -5,7 +5,9 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 # Step 2: Run the application
-FROM openjdk:17-jdk-slim
+# We changed from openjdk:17-jdk-slim to eclipse-temurin:17-jre-alpine
+# This is a much more stable and smaller image for Spring Boot
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
