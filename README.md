@@ -1,80 +1,126 @@
-My Workspace Explorer - Full Stack Project Management System
-A full-stack task and project management application built with a Spring Boot backend, React frontend, and MySQL database.
+My Workspace Explorer
+
+Full-Stack Project Management System
+
+A modern full-stack project and task management application built using Spring Boot, React, and MySQL. The app focuses on secure authentication, clean UI, and seamless backend integration.
 
 🚀 Live Demo
-• Frontend: https://my-workspace-sigma.vercel.app/(https://my-workspace-sigma.vercel.app/)
 
-• Backend API: https://my-workspace-backend-kisc.onrender.com
+Frontend: https://my-workspace-sigma.vercel.app
 
+Backend API: https://my-workspace-backend-kisc.onrender.com
 
-✨ Key Features
-• Secure Authentication: User registration and login using Spring Security and BCrypt password hashing.
+✨ Features
 
-• Project Management: Create, view, update, and delete projects with a sleek UI.
+Secure Authentication
 
-• Responsive Design: Fully optimized for mobile and desktop using Tailwind CSS.
+User registration and login using Spring Security
 
-• Live Backend Integration: Connected to a cloud-hosted MySQL database.
+Password encryption with BCrypt
 
-• Persistent Sessions: User data and login states maintained via `localStorage`.
+Project Management
 
+Create, view, update, and delete projects
+
+Clean and intuitive user interface
+
+Responsive UI
+
+Fully responsive design for mobile and desktop
+
+Styled with Tailwind CSS
+
+Live Backend Integration
+
+RESTful APIs powered by Spring Boot
+
+Cloud-hosted MySQL database
+
+Persistent Sessions
+
+User login state maintained using localStorage
 
 🛠️ Tech Stack
-• Frontend: React.js, Tailwind CSS, React Icons
+Frontend
 
-• Backend: Java, Spring Boot, Spring Security, Maven
+React.js
 
-• Database: MySQL (Hosted on Aiven Cloud)
+Tailwind CSS
 
-• Deployment: Vercel (Frontend), Render (Backend)
+React Icons
 
+Backend
 
-🏗️ Local Installation
+Java
+
+Spring Boot
+
+Spring Security
+
+Maven
+
+Database
+
+MySQL (Aiven Cloud)
+
+Deployment
+
+Frontend: Vercel
+
+Backend: Render (Dockerized)
+
+🏗️ Local Setup
 Prerequisites
 
-• JDK 21 or higher
+JDK 21 or higher
 
-• Node.js & npm
+Node.js & npm
 
-• Maven
+Maven
 
-
-1. Backend Setup
-
-```
-
+Backend Setup
 cd my-workspace-backend
 
-# Update src/main/resources/application.properties with your DB credentials
+
+Update database credentials in:
+
+src/main/resources/application.properties
+
+
+Then run:
 
 mvn clean install
-
 mvn spring-boot:run
 
-```
-
-
-2. Frontend Setup
-
-```
-
+Frontend Setup
 cd my-workspace-frontend
-
 npm install
-
 npm start
-
-```
-
 
 🌐 Hosting Details
 
-• Database: Managed MySQL instance on Aiven Cloud.
+Database: Managed MySQL on Aiven Cloud
 
-• Backend Server: Deployed on Render using a Dockerized Java environment.
+Backend Server: Render (Dockerized Java environment)
 
-• Frontend Hosting: High-performance hosting on Vercel Edge Network.
+Frontend Hosting: Vercel Edge Network
 
----
+📊 Repository Stats
 
-Created by Kalpesh Gunjal
+Languages Used
+
+JavaScript — 80.7%
+
+Java — 17.2%
+
+Other — 2.1%
+
+👤 Author
+
+Kalpesh Gunjal
+Frontend & Full-Stack Developer
+
+⭐ Feedback
+
+If you like this project, consider giving it a ⭐ on GitHub.
+Suggestions and improvements are always welcome!
