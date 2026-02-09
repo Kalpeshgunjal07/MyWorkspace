@@ -62,6 +62,7 @@ npm start
 ```
 
 🌐 Hosting Details
+
 • Database: Managed MySQL instance on Aiven Cloud.
 
 • Backend Server: Deployed on Render using a Dockerized Java environment.
