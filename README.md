@@ -1,10 +1,11 @@
 My Workspace Explorer - Full Stack Project Management System
-A premium, full-stack task and project management application built with a Spring Boot backend, React frontend, and MySQL database.
+A full-stack task and project management application built with a Spring Boot backend, React frontend, and MySQL database.
 
 🚀 Live Demo
 • Frontend: https://my-workspace-sigma.vercel.app/(https://my-workspace-sigma.vercel.app/)
 
-• Backend API: [[suspicious link removed]]([suspicious link removed])
+• Backend API: https://my-workspace-backend-kisc.onrender.com
+
 
 ✨ Key Features
 • Secure Authentication: User registration and login using Spring Security and BCrypt password hashing.
@@ -17,6 +18,7 @@ A premium, full-stack task and project management application built with a Sprin
 
 • Persistent Sessions: User data and login states maintained via `localStorage`.
 
+
 🛠️ Tech Stack
 • Frontend: React.js, Tailwind CSS, React Icons
 
@@ -26,6 +28,7 @@ A premium, full-stack task and project management application built with a Sprin
 
 • Deployment: Vercel (Frontend), Render (Backend)
 
+
 🏗️ Local Installation
 Prerequisites
 
@@ -34,6 +37,7 @@ Prerequisites
 • Node.js & npm
 
 • Maven
+
 
 1. Backend Setup
 
@@ -49,6 +53,7 @@ mvn spring-boot:run
 
 ```
 
+
 2. Frontend Setup
 
 ```
@@ -60,6 +65,7 @@ npm install
 npm start
 
 ```
+
 
 🌐 Hosting Details
 
