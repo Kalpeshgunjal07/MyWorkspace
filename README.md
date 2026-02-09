@@ -1,126 +1,126 @@
-My Workspace Explorer
+# My Workspace Explorer
 
-Full-Stack Project Management System
+## Full-Stack Project Management System
 
-A modern full-stack project and task management application built using Spring Boot, React, and MySQL. The app focuses on secure authentication, clean UI, and seamless backend integration.
+My Workspace Explorer is a full-stack project and task management application built using **Spring Boot**, **React**, and **MySQL**. The system focuses on secure authentication, clean user experience, and smooth backend–frontend integration.
 
-🚀 Live Demo
+---
 
-Frontend: https://my-workspace-sigma.vercel.app
+## 🚀 Live Demo
 
-Backend API: https://my-workspace-backend-kisc.onrender.com
+* **Frontend:** [https://my-workspace-sigma.vercel.app](https://my-workspace-sigma.vercel.app)
+* **Backend API:** [https://my-workspace-backend-kisc.onrender.com](https://my-workspace-backend-kisc.onrender.com)
 
-✨ Features
+---
 
-Secure Authentication
+## ✨ Key Features
 
-User registration and login using Spring Security
+* **Secure Authentication**
+  User registration and login implemented using Spring Security with BCrypt password hashing.
 
-Password encryption with BCrypt
+* **Project Management**
+  Create, view, update, and delete projects through a clean and intuitive interface.
 
-Project Management
+* **Responsive Design**
+  Fully responsive UI optimized for both mobile and desktop using Tailwind CSS.
 
-Create, view, update, and delete projects
+* **Live Backend Integration**
+  RESTful APIs connected to a cloud-hosted MySQL database.
 
-Clean and intuitive user interface
+* **Persistent Sessions**
+  User login state and data stored using browser localStorage.
 
-Responsive UI
+---
 
-Fully responsive design for mobile and desktop
+## 🛠️ Tech Stack
 
-Styled with Tailwind CSS
+### Frontend
 
-Live Backend Integration
+* React.js
+* Tailwind CSS
+* React Icons
 
-RESTful APIs powered by Spring Boot
+### Backend
 
-Cloud-hosted MySQL database
+* Java
+* Spring Boot
+* Spring Security
+* Maven
 
-Persistent Sessions
+### Database
 
-User login state maintained using localStorage
+* MySQL (Aiven Cloud)
 
-🛠️ Tech Stack
-Frontend
+### Deployment
 
-React.js
+* Frontend: Vercel
+* Backend: Render (Dockerized Java environment)
 
-Tailwind CSS
+---
 
-React Icons
+## 🏗️ Local Installation
 
-Backend
+### Prerequisites
 
-Java
+* JDK 21 or higher
+* Node.js & npm
+* Maven
 
-Spring Boot
+---
 
-Spring Security
+### Backend Setup
 
-Maven
-
-Database
-
-MySQL (Aiven Cloud)
-
-Deployment
-
-Frontend: Vercel
-
-Backend: Render (Dockerized)
-
-🏗️ Local Setup
-Prerequisites
-
-JDK 21 or higher
-
-Node.js & npm
-
-Maven
-
-Backend Setup
+```bash
 cd my-workspace-backend
-
+```
 
 Update database credentials in:
 
+```
 src/main/resources/application.properties
+```
 
+Build and run the backend:
 
-Then run:
-
+```bash
 mvn clean install
 mvn spring-boot:run
+```
 
-Frontend Setup
+---
+
+### Frontend Setup
+
+```bash
 cd my-workspace-frontend
 npm install
 npm start
+```
 
-🌐 Hosting Details
+---
 
-Database: Managed MySQL on Aiven Cloud
+## 🌐 Hosting Details
 
-Backend Server: Render (Dockerized Java environment)
+* **Database:** Managed MySQL instance on Aiven Cloud
+* **Backend Server:** Render
+* **Frontend Hosting:** Vercel Edge Network
 
-Frontend Hosting: Vercel Edge Network
+---
 
-📊 Repository Stats
+## 📊 Repository Overview
 
-Languages Used
+* **Languages Used**
 
-JavaScript — 80.7%
+  * JavaScript: 80.7%
+  * Java: 17.2%
+  * Other: 2.1%
 
-Java — 17.2%
+---
 
-Other — 2.1%
+## 👤 Author
 
-👤 Author
+**Kalpesh Gunjal**
 
-Kalpesh Gunjal
-Frontend & Full-Stack Developer
+---
 
-⭐ Feedback
-
-If you like this project, consider giving it a ⭐ on GitHub.
-Suggestions and improvements are always welcome!
+If you find this project useful, feel free to explore the code and suggest improvements.
