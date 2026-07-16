@@ -1,4 +1,4 @@
-const BASE_URL = "https://my-workspace-backend-kisc.onrender.com/api/projects";
+const BASE_URL = `${import.meta.env.VITE_API_URL}/api/projects`;
 
 export const getProjects = async (userId) => {
     const res = await fetch(`${BASE_URL}/user/${userId}`);

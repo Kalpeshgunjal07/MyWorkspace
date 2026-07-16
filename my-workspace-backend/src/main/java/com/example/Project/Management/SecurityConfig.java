@@ -28,6 +28,7 @@ public class SecurityConfig {
                     // Added your specific Vercel URL to the allowed origins
                     config.setAllowedOrigins(List.of(
                             "http://localhost:5173",
+"http://localhost:3000",
                             "https://my-workspace-sigma.vercel.app"
                     ));
                     config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
