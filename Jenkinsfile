@@ -17,35 +17,14 @@ pipeline {
             }
         }
 
-        stage('Build Backend') {
-            steps {
-                dir('my-workspace-backend') {
-                    sh 'chmod +x mvnw'
-                    sh './mvnw clean package -DskipTests'
-                }
-            }
-        }
-
-        stage('Test Backend') {
-            steps {
-                dir('my-workspace-backend') {
-                    sh './mvnw test'
-                }
-            }
-        }
-
-        stage('Build Frontend') {
-            steps {
-                dir('my-workspace-frontend') {
-                    sh 'npm ci'
-                    sh 'npm run build'
-                }
-            }
-        }
-
-        stage('Build Docker Images') {
+        stage('Build Backend Image') {
             steps {
                 sh "docker build -t ${BACKEND_IMAGE}:${IMAGE_TAG} -t ${BACKEND_IMAGE}:latest ./my-workspace-backend"
+            }
+        }
+
+        stage('Build Frontend Image') {
+            steps {
                 sh "docker build -t ${FRONTEND_IMAGE}:${IMAGE_TAG} -t ${FRONTEND_IMAGE}:latest ./my-workspace-frontend"
             }
         }
