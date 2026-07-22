@@ -1,4 +1,4 @@
-const BASE_URL = "https://my-workspace-backend-kisc.onrender.com/api/auth";
+const BASE_URL = `${import.meta.env.VITE_API_URL}/api/auth`;
 
 export const loginUser = async (credentials) => {
     const res = await fetch(`${BASE_URL}/login`, {
@@ -6,13 +6,10 @@ export const loginUser = async (credentials) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(credentials),
     });
-
     const data = await res.json();
-
     if (!res.ok) {
         throw new Error(data.message || "Invalid credentials");
     }
-
     localStorage.setItem("user", JSON.stringify(data));
     return data;
 };
@@ -23,13 +20,10 @@ export const registerUser = async (user) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
     });
-
     const data = await res.json();
-
     if (!res.ok) {
         throw new Error(data.message || "Registration failed");
     }
-
     return data;
 };
 
